@@ -17,7 +17,11 @@ Check out the configuration reference at https://huggingface.co/docs/hub/spaces-
 🎬 RoBERTa Sentiment Analysis — Rotten Tomatoes
 A fine-tuned RoBERTa-base model for binary sentiment classification of movie reviews. Upgraded from a DistilBERT baseline (82%) to achieve 88.5% test accuracy with balanced precision and recall.
 
+
+
 <img width="494" height="364" alt="Screenshot 2026-05-08 123132" src="https://github.com/user-attachments/assets/b7a82d32-665f-4645-8119-466840d34069" />
+
+
 
 **Model Description**
 This model is a fine-tuned version of FacebookAI/roberta-base trained on the full Rotten Tomatoes movie review dataset for binary sentiment classification.
@@ -31,15 +35,28 @@ RoBERTa (Robustly optimized BERT approach) improves on BERT with dynamic masking
 
 **Improvement Over Baseline**
 
+
+
 <img width="667" height="151" alt="Screenshot 2026-05-08 122616" src="https://github.com/user-attachments/assets/246af421-acda-463e-ae4c-56d6445108c8" />
+
+
 
 **Data Set**
 
+
+
 <img width="455" height="314" alt="Screenshot 2026-05-08 122320" src="https://github.com/user-attachments/assets/a62583c2-4b98-4dc5-aee5-92b51cecc789" />
+
+
 
 **Data Splits**
 
+
+
 <img width="425" height="209" alt="Screenshot 2026-05-08 122205" src="https://github.com/user-attachments/assets/01c6c4b8-5cbb-48d2-b9b5-68e9f1219183" />
+
+
+
 
 **Class Imbalance Assessment**
 The dataset is perfectly balanced at 50/50 across all splits (4,265 per class in train). No class weighting, oversampling, or loss rebalancing is needed — standard cross-entropy loss works optimally.
@@ -54,7 +71,17 @@ The dataset is perfectly balanced at 50/50 across all splits (4,265 per class in
 **Training Details
 Training Configuration**
 
+
+
+
 <img width="581" height="893" alt="Screenshot 2026-05-08 121550" src="https://github.com/user-attachments/assets/5a48aee9-43a2-44c2-a382-dd0fcb99d227" />
+
+
+
+
+
+
+
 
 **Training Method**
 
@@ -88,7 +115,17 @@ All metrics computed on the full test split (1,066 samples, perfectly balanced a
 
 
 
+
+
+
+
+
+
 <img width="255" height="213" alt="Screenshot 2026-05-08 120931" src="https://github.com/user-attachments/assets/78d121d3-fb73-481b-9045-b7051e683c17" />
+
+
+
+
 
 
 
@@ -105,6 +142,7 @@ True Negatives: 472 — correctly identified negative reviews
 False Positives: 61 — negative reviews misclassified as positive
 False Negatives: 62 — positive reviews misclassified as negative
 Total misclassified: 123 / 1,066 (11.5%)
+
 **Error Analysis**
 Error Patterns
 
@@ -133,7 +171,11 @@ The model correctly classifies approximately 9 out of every 10 movie reviews —
 
 **Why RoBERTa Outperforms DistilBERT ?** 
 
+
+
 <img width="674" height="311" alt="Screenshot 2026-05-08 115457" src="https://github.com/user-attachments/assets/aadeb578-367e-46da-898b-5b12a7ba5d36" />
+
+
 
 
 **Limitations & Bias**
@@ -178,6 +220,8 @@ Multi-language or code-switched text.
 Fine-grained sentiment (1-5 stars, emotion detection).
 
 **Future Improvements**
+
+
 
 <img width="771" height="418" alt="Screenshot 2026-05-08 115438" src="https://github.com/user-attachments/assets/cb0ea795-00c5-47e8-8b62-83d97b840adf" />
 
