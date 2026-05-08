@@ -12,7 +12,8 @@ license: mit
 short_description: AI-powered sentiment analysis app built using RoBERTa,Gradio
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference 
+Check out the app: https://huggingface.co/spaces/keerthi1515/senti-analyzer-demo
+
 
 🎬 RoBERTa Sentiment Analysis — Rotten Tomatoes
 A fine-tuned RoBERTa-base model for binary sentiment classification of movie reviews. Upgraded from a DistilBERT baseline (82%) to achieve 88.5% test accuracy with balanced precision and recall.
